@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Supervillains Club</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="px-4 py-5 my-5">
+    <img class="d-block mx-auto mb-4" src="/images/villain-logo.png" alt="Supervillains Club">
+    <div class="col-lg-6 mx-auto">
+        <div class="alert alert-success" role="alert" th:if="${message}">
+          <span th:text="${message}"/>
+        </div>
+        <div class="list-group">
+            <div th:each="villain: ${supervillains}" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <img src="/images/raywenderlich.png" alt="villain logo" width="32" height="32" class="flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0" th:text="${villain.name}"></h6>
+                        <p class="mb-0 opacity-75" th:text="${villain.description}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Supervillains Club</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<h1></h1>
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold" th:text="${title}"></h1>
+    <img class="d-block mx-auto mb-4" src="/images/villain-logo.png" alt="Supervillains Club">
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+            This club is the home for supervillains who've sworn to destroy the world.
+            If you want to join, please register yourself.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button onclick="submitForm()" type="button" class="btn btn-primary btn-lg px-4 gap-3">Register</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+  function submitForm() {
+    window.location.href = '/register';
+  }
+</script>
+</body>
+</html>
