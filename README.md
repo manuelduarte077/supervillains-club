@@ -1,4 +1,4 @@
-# Kotlin+Regex Tutorial
+# Kotlin+Regex
 
 Open this project using Intellij Idea.
 
@@ -20,4 +20,3 @@ interact with:
 There are 2 tests: SupervillainsclubControllerTest and
 RegexValidatorTest.
 
-The code that the readers need to modify is RegexValidator.kt
