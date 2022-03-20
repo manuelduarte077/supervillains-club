@@ -1,4 +1,3 @@
-
 package com.manuelduarte077.supervillainsclub
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -8,5 +7,5 @@ import org.springframework.boot.runApplication
 class SupervillainsClubApplication
 
 fun main(args: Array<String>) {
-  runApplication<SupervillainsClubApplication>(*args)
+    runApplication<SupervillainsClubApplication>(*args)
 }

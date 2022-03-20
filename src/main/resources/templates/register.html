@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Register as a Supervillain</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -19,14 +20,16 @@
                     <div class="row g-3">
                         <div class="col-sm-12">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="" value="" th:field="*{name}" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="" value=""
+                                   th:field="*{name}" required>
                         </div>
                     </div>
-                    <br />
+                    <br/>
                     <div class="row g-3">
                         <div class="col-sm-12">
                             <label for="description" class="form-label">Description</label>
-                            <input type="text" class="form-control" id="description" name="description" placeholder="" value="" th:field="*{description}" required>
+                            <input type="text" class="form-control" id="description" name="description" placeholder=""
+                                   value="" th:field="*{description}" required>
                         </div>
                     </div>
                     <hr class="my-4"/>
@@ -37,9 +40,9 @@
     </div>
 </div>
 <script type="text/javascript">
-  function submitForm() {
-    document.getElementsByTagName("form")[0].submit();
-  }
+    function submitForm() {
+        document.getElementsByTagName("form")[0].submit();
+    }
 </script>
 </body>
 </html>
