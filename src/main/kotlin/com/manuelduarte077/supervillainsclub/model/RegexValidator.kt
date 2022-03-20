@@ -11,6 +11,7 @@ class RegexValidator {
             return true
         }
 
+        // Filtrar los nombres
         fun filterNames(names: String): List<String> {
             val pattern = Regex("""Captain\s[a-zA-Z_0-9]+""")
             return pattern.findAll(names).map {
@@ -18,6 +19,7 @@ class RegexValidator {
             }.toList()
         }
 
+        // Para extraer el nombre del personaje de la cadena de texto
         fun extractNames(names: String): List<String> {
             val pattern = Regex("""Captain\s(\w+)""")
             val results = pattern.findAll(names)

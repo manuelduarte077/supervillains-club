@@ -30,15 +30,15 @@ class SupervillainsClubController {
     val heroes = "Captain Marvel, Captain Amazing, Captain Chocolate, Captain Perfect"
 
     val diet_html = """<html>
-  <head>
-    <title>Diet plan for Villain Numba One</title>
-  </head>
-  <body>
-    <ul>
-      <li>5kg Unicorn Meat</li><li>2L Lava</li><li>2kg Meteorite</li>
-    </ul>
-  </body>
-</html>""".trimIndent()
+                          <head>
+                            <title>Diet plan for Villain Numba One</title>
+                          </head>
+                          <body>
+                            <ul>
+                              <li>5kg Unicorn Meat</li><li>2L Lava</li><li>2kg Meteorite</li>
+                            </ul>
+                          </body>
+                        </html>""".trimIndent()
 
     val zetaGenerationSentences =
         "I just beat a hero :] looks like I'm good :) I think I can beat more heroes \uD83E\uDD23 I'm the greatest villain"
